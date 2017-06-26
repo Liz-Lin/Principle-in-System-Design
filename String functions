@@ -74,7 +74,8 @@ size_t strspn(const char *str1, const char *str2)
     while(*str1) 
       if(strchr(str2, (int)*str1++) != NULL)
           ++to_return;
-    return to_return;
+      else
+      	  return to_return;
 }
 
 //exception 1 line = 7
